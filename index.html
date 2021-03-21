@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The OOP: Portal informativo</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="container-nav">
         <nav class="nav-main">
-            <img class="nav-brand" src="./pictures/iujo-logo.png" alt="Iujo logo">
+            <a href="index.html"><img class="nav-brand" src="./pictures/iujo-logo.png" alt="Iujo logo"></a>
             <ul class="nav-menu">
                 <li><a>Home</a></li>
                 <li><a href="./components/author.html">Apartado del autor</a></li>
@@ -20,7 +21,7 @@
             </ul>
             <ul>
                 <li>
-                    <i>Searh Icon Here</i>
+                    <img class="search" src="./icons/search-13-24.png" alt="search">
                 </li>
             </ul>
         </nav>
@@ -29,26 +30,77 @@
 
     <div class="container">
         <main class="main-content">
+            
             <div class="wrapper">
-                <h1>Bienvenido al portal web del iujo acerca de POO</h1>
+                <h1>Bienvenido al Portal Web del IUJO</h1>
+                <img class="welcome-img" src="./pictures/welcome-img.png" alt="Welcome-image">
+            </div>    
+                
+            <div class="wrapper">
+                <h2>Proposito del Portal</h2>
+                <hr>
 
-                <p>"programacion orientada a objetos" o OOP en ingles. Un area informativa principalmente destinada a aquellos estudiantes del segundo y tercer semestre interesados por apredender de POO.</p>
+                <p>Con el objetivo de "programacion orientada a objetos" o OOP en ingles. Un area informativa principalmente destinada a aquellos estudiantes del segundo y tercer semestre interesados por apredender de POO.</p>
 
                 <p>Aqui encontraras los fundamentos de POO y una guia a traves de los diferentes conceptos que lo componen. Si ya eres conocedor del tema y buscas algo en especifico te invitamos a visitar el glosario de terminos, donde podras encontrar el contenido mas destacado en orden alfabetico.</p>
 
                 <p>De igual forma puedes ver el indice del contenido informativo en todas las interfaces del portal web, alli tambien encontraras de forma ordenada los contenidos.</p>
     
                 <p>De lo contrario, empecemos por una indrotuccion al tema, y para hablar de programacion orientada a objetos, debemos comenzar por la programacion en si y sus fundamentos.</p>
-            
-                <h2 id="intro">Introducción al tema</h2>
+            </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus sint eos eligendi repudiandae sequi et eius ullam autem repellat atque, possimus quis consequatur culpa saepe magnam modi totam? Magnam.</p>
+            <div class="wrapper">
+                <h2 id="intro">Introducción al tema</h2>
+                <hr>
+
+                <p>La programación es muy extensa y existen muchas formas de programar, es tan
+                    amplia que incluso el proceso de aprendizaje podría ser confuso y frustrante.
+                    Hablando en términos generales, a los estilos de programación se les llama
+                    paradigmas.El paradigma con el que todos aprendimos a programar es el
+                    secuencial o estructurado, aquí las instrucciones van de arriba hacia abajo, no
+                    tenemos que abstraer cosas complejas, simplemente damos ordenes una tras
+                    otra</p>
+
+                <p>Cuando empiezas con proyectos más grandes te das cuenta que este paradigma
+                    no te ayuda mucho. </p>
+
+                <p>La Programación Orientada a Objetos (POO) es un paradigma de programación, es decir, un modelo o un estilo
+                    de programación que nos da unas guías sobre cómo trabajar con él. Se basa en el concepto de clases y objetos.
+                    Este tipo de programación se utiliza para estructurar un programa de software en piezas simples y reutilizables de
+                    planos de código (clases) para crear instancias individuales de objetos.</p>
+
+                <p>Con el paradigma de Programación Orientado a Objetos lo que buscamos es dejar de centrarnos en la lógica pura
+                    de los programas, para empezar a pensar en objetos, lo que constituye la base de este paradigma. Esto nos ayuda
+                    muchísimo en sistemas grandes, ya que en vez de pensar en funciones, pensamos en las relaciones o interacciones
+                    de los diferentes componentes del sistema.
+                    Un programador diseña un programa de software organizando piezas de información y comportamientos
+                    relacionados en una plantilla llamada clase. Luego, se crean objetos individuales a partir de la plantilla de clase.
+                    Todo el programa de software se ejecuta haciendo que varios objetos interactúen entre sí para crear un programa
+                    más grande.</p>
+
+                    Al programar orientado a objetos tenemos que aprender a pensar cómo resolver los
+                    problemas de una manera distinta a como se realizaba anteriormente, en la
+                    programación estructurada. Ahora tendremos que escribir nuestros programas en
+                    términos de clases, objetos, propiedades, métodos y otras cosas que veremos
+                    rápidamente para aclarar conceptos y dar una pequeña base que permita soltarnos
+                    un poco con los conceptos de este tipo de programación. 
+            </div>
+
+            <div class="wrapper">
+                <h2>¿Ahora que sigue?</h2>
+                <hr>
+
+                <p>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos.</p>
+                <br>
+                <p>Pasemos página y veamos más a fondo de que trata POO.</p>
+
+
             </div>
         </main>
 
     <aside class="nav-index">
         <ul>
-            <li><a href="#intro">Introducción a la Orientación a Objetos</a></li>
+            <li><a href="#intro">Introducción al tema</a></li>
             <li><a href="#">Qué es la Orientación a Objetos</a></li>
             <li><a href="#">El paradigma Orientado a Objetos vs otros paradigmas</a></li>
     
@@ -76,12 +128,27 @@
             <li><a href="#">Diagrama de paquetes</a></li>
         </ul>
     </aside>
+
+    <aside class="wrapper aside-content">
+        <h2>¿Quieres practicar con POO?</h2>
+        <hr>
+
+        <p>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos.</p>
+        <br>
+        <p>Pasemos página y veamos más a fondo de que trata POO.</p>
+
+
+    </aside>
 </div>
 
-    <div class="container">
+    <div id="foot">
+        <hr>
         <footer class="page-foot">
-            <!-- Pagination -->
-            <h1>Aqui va el footer...</h1>
+            <div class="container">
+                <a href=""><img src="./icons/facebook-24.png" alt="facebook"></a>
+                <a href=""><img src="./icons/instagram-24.png" alt="instagram"></a>
+                <p id="foo" class="border-bottom">Copyright © All rights reserved to I.U.J.O</p>
+            </div>
         </footer>
     </div>
 

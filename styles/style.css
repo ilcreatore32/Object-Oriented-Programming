@@ -17,12 +17,23 @@ ul{
     list-style: none;
 }
 
-/* Links */
-
 a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+}
+
+hr{
+    margin: 0 0 20px 0;
+}
+
+h2{
+    padding-left: 30px;
+}
+
+p{
+    text-align: justify;
+    text-justify: auto;
 }
 
 /* Containers */
@@ -30,6 +41,11 @@ a {
 .container{
     margin: auto;
     width: 90%;
+}
+
+.container-nav{
+    margin: auto;
+    width: 100%;
 }
 
 /* Navegation */
@@ -46,6 +62,7 @@ a {
 
 .nav-brand{
     width: 200px;
+    margin-left: 15px;
 }
 
 .nav-main ul{
@@ -70,8 +87,13 @@ a {
     margin-left: 20px;
 }
 
-hr{
-    margin: 0 0 20px 0;
+.search{
+    margin-right: 20px;
+}
+
+.search:hover{
+    opacity: .7;
+    cursor: pointer;
 }
 
 /* Left Navegation Index */
@@ -100,4 +122,39 @@ hr{
     background-color: #fff;
     color: black;
     padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Aside Content */
+
+.aside-content{
+    background-color: white;
+    width: 30%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/*  Footer */
+
+#foot a{
+    margin: 2em;
+}
+
+.page-foot{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    font-size: 16px;
+    background-color: rgb(39, 39, 39);
+    margin-top: 20px;
+    padding: 20px;
+    height: auto;
+}
+
+#foo{
+    text-align: center;
+    border-top: 1px solid #ccc;
 }
