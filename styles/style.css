@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Roboto Mono", monospace; */
     font-size: 16px;
     color: #fff;
     background-color: #323432;
@@ -189,6 +190,7 @@ p{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 0.5rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 .thing {
@@ -205,6 +207,7 @@ p{
   .thing:hover {
     padding-left: 0.5rem;
     border-left: 0.5rem solid #00ff99;
+    box-shadow: #00ff99d5 0px 0px 16px;
   }
   
   .thing > :first-child {

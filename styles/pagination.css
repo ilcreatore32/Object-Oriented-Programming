@@ -1,0 +1,33 @@
+/* Pagination links */
+.pagination a {
+    color: rgb(27, 27, 27);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .4s;
+}
+  
+/* Active/Current link */
+.pagination a.active {
+    background-color: #00ff99;
+    color: white;
+    border-radius: 5rem;
+}
+  
+/* Grey Color Hover */
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    background-color: #00ff9941;
+    border-radius: 5rem;
+}
+
+.container-paging{
+    float: left;
+    background-color: #fff;
+    border-radius: 0.5rem; 
+}
+
+.pagination{
+       
+    background-color: #fff;
+}
