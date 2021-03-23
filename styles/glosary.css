@@ -1,7 +1,4 @@
-.glosary{
-
-}
-
+/* Glosary styles */
 #term-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,7 +11,7 @@
 }
 
 #term-cards h3{
-    font-size: 20px;
+    font-size: 13px;
     text-align: center;
     margin: 10px 0;
 }
@@ -26,7 +23,6 @@
 #term-cards a{
     padding: 10px 0;
     font-size: 11px;
-    color: #000;
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
@@ -34,4 +30,13 @@
 
 #term-cards a:hover{
     text-decoration-line: underline;
+}
+
+a.next{
+    color: #039c5f;
+}
+
+a.next:hover{
+    color: #00ff99d5;
+    text-decoration: underline;
 }

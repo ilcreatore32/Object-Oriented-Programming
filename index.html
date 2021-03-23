@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- Page Main Navegation -->
     <div class="container-nav">
         <nav class="nav-main">
             <a href="index.html"><img class="nav-brand" src="./pictures/iujo-logo.png" alt="Iujo logo"></a>
@@ -28,141 +29,176 @@
         <hr class="subline">
     </div>
 
+    <!-- Main -->
     <div class="container">
+
         <main class="main-content">
             
+            <!-- Welcome image -->
             <div class="wrapper">
                 <h1>Bienvenido al Portal Web del IUJO</h1>
-                <img class="welcome-img" src="./pictures/welcome-img.png" alt="Welcome-image">
+                <img class="welcome-img" src="./pictures/welcome.jpg" alt="Welcome-image">
             </div>    
-                
+            
+            
+            <!-- Main Contend -->
             <div class="wrapper thing">
                 <h2>Proposito del Portal</h2>
                 <hr class="subline">
 
-                <p>Con el objetivo de "programacion orientada a objetos" o OOP en ingles. Un area informativa principalmente destinada a aquellos estudiantes del segundo y tercer semestre interesados por apredender de POO.</p>
+                <p><span class="inside-idt">El</span> objetivo de "programacion orientada a objetos" o OOP en ingles. Un area informativa principalmente destinada a aquellos estudiantes del segundo y tercer semestre interesados por apredender de POO.</p>
 
-                <p>Aqui encontraras los fundamentos de POO y una guia a traves de los diferentes conceptos que lo componen. Si ya eres conocedor del tema y buscas algo en especifico te invitamos a visitar el glosario de terminos, donde podras encontrar el contenido mas destacado en orden alfabetico.</p>
+                <p><span class="inside-idt">Aqui</span> encontraras los fundamentos de POO y una guia a traves de los diferentes conceptos que lo componen. Si ya eres conocedor del tema y buscas algo en especifico te invitamos a visitar el glosario de terminos, donde podras encontrar el contenido mas destacado en orden alfabetico.</p>
 
-                <p>De igual forma puedes ver el indice del contenido informativo en todas las interfaces del portal web, alli tambien encontraras de forma ordenada los contenidos.</p>
+                <p><span class="inside-idt">De</span> igual forma puedes ver el indice del contenido informativo en todas las interfaces del portal web, alli tambien encontraras de forma ordenada los contenidos.</p>
     
-                <p>De lo contrario, empecemos por una indrotuccion al tema, y para hablar de programacion orientada a objetos, debemos comenzar por la programacion en si y sus fundamentos.</p>
+                <p><span class="inside-idt">De</span> lo contrario, empecemos por una indrotuccion al tema, y para hablar de programacion orientada a objetos, debemos comenzar por la programacion en si y sus fundamentos.</p>
             </div>
 
             <div class="wrapper thing">
                 <h2 id="intro">Introducción al tema</h2>
                 <hr class="subline">
 
-                <p>La programación es muy extensa y existen muchas formas de programar, es tan
-                    amplia que incluso el proceso de aprendizaje podría ser confuso y frustrante.
-                    Hablando en términos generales, a los estilos de programación se les llama
-                    paradigmas.El paradigma con el que todos aprendimos a programar es el
-                    secuencial o estructurado, aquí las instrucciones van de arriba hacia abajo, no
-                    tenemos que abstraer cosas complejas, simplemente damos ordenes una tras
-                    otra</p>
+                <p class="indent"><span class="inside-idt">Para</span> poder entender que es programación orientada a objetos, a su vez, debemos comprender que son los algoritmos, la programación y paradigmas de programación: </p>
+                <br>
+                <p class="indent"><span class="inside-idt">Los</span> algoritmos son simplemente una serie de instrucciones sencillas que se llevan a cabo para solventar un problema. Son una serie de pasos, reglas definidas o secuencia de acciones, en fin; con esta definición sencilla se puede evidenciar algo, y es que, un algoritmo puede existir fuera del ámbito computacional.</p>
+                <br>
+                <p class="indent"><span class="inside-idt">Entonces</span> programación es la acción de tomar un algoritmo y codificarlo en una notación (lenguaje de programación), de modo que pueda ser ejecutado o interpretado por una computadora, con el propósito de, nuevamente, solventar un problema.</p>
+                <br>
+                <p class="indent mg-b"><span class="inside-idt">Un</span> paradigma es un modelo o un estilo de programación que nos da unas guías sobre cómo trabajar y así conseguir la solución deseada. Entonces se podría definir a un paradigma de programación como un enfoque, una manera específica de atacar un problema a través de la programación.</p>
 
-                <p>Cuando empiezas con proyectos más grandes te das cuenta que este paradigma
-                    no te ayuda mucho. </p>
+                <h3><span class="inside-idt"></span>El paradigma: POO</h3>
+                <hr class="subline">
 
-                <p>La Programación Orientada a Objetos (POO) es un paradigma de programación, es decir, un modelo o un estilo
-                    de programación que nos da unas guías sobre cómo trabajar con él. Se basa en el concepto de clases y objetos.
-                    Este tipo de programación se utiliza para estructurar un programa de software en piezas simples y reutilizables de
-                    planos de código (clases) para crear instancias individuales de objetos.</p>
-
-                <p>Con el paradigma de Programación Orientado a Objetos lo que buscamos es dejar de centrarnos en la lógica pura
-                    de los programas, para empezar a pensar en objetos, lo que constituye la base de este paradigma. Esto nos ayuda
-                    muchísimo en sistemas grandes, ya que en vez de pensar en funciones, pensamos en las relaciones o interacciones
-                    de los diferentes componentes del sistema.
-                    Un programador diseña un programa de software organizando piezas de información y comportamientos
-                    relacionados en una plantilla llamada clase. Luego, se crean objetos individuales a partir de la plantilla de clase.
-                    Todo el programa de software se ejecuta haciendo que varios objetos interactúen entre sí para crear un programa
-                    más grande.</p>
-
-                    Al programar orientado a objetos tenemos que aprender a pensar cómo resolver los
-                    problemas de una manera distinta a como se realizaba anteriormente, en la
-                    programación estructurada. Ahora tendremos que escribir nuestros programas en
-                    términos de clases, objetos, propiedades, métodos y otras cosas que veremos
-                    rápidamente para aclarar conceptos y dar una pequeña base que permita soltarnos
-                    un poco con los conceptos de este tipo de programación. 
+                <p class="indent"><span class="inside-idt">El</span> paradigma con el que la mayoría aprendimos a programar (incluyéndome) es el secuencial o estructurado, aquí las instrucciones van de arriba hacia abajo, no tenemos que pensar en cosas complejas, simplemente damos ordenes (algoritmo) una tras otra, tras otra y así sucesivamente. Con el paso del tiempo este enfoque se ha quedado muy atrás para el desarrollo de sistemas o apps complejas, por lo que se adoptan otros estilos de programación para llevar un desarrollo más eficiente, como la programación orientada a objetos.</p>
+                <br>
+                <p class="indent"><span class="inside-idt">Con</span> el paradigma de Programación orientado a objetos lo que buscamos es dejar de centrarnos en la lógica pura de los programas, para empezar a pensar en objetos, lo que constituye la base de este paradigma. Esto nos ayuda muchísimo en sistemas grandes, ya que, en vez de pensar en funciones, pensamos en las relaciones o interacciones de los diferentes componentes del sistema.</p>
+                <br>
+                <p class="indent"><span class="inside-idt">La</span> programación orientada a objetos o “POO” es un paradigma surgido en los años 1970, que utiliza objetos como elementos fundamentales en la construcción de la solución. Como su nombre lo indica se utilizan objetos para diseñar sus aplicaciones y no algoritmos; un objeto es una abstracción de algún hecho o ente del mundo real, con atributos que representan sus características o propiedades, y métodos que emulan su comportamiento o actividad. Con POO tenemos que aprender a pensar las cosas de una manera distinta, para escribir nuestros programas en términos de objetos.</p>
+                <br>
+                <p class="indent mg-b"><span class="inside-idt">POO</span> se fue convirtiendo en el estilo de programación dominante a mediados de los años ochenta. Su dominación fue consolidada gracias al auge de las Interfaces gráficas de usuario, para las cuales la programación orientada a objetos está particularmente bien adaptada. Actualmente, sigue siendo el paradigma más utilizado, y aprender POO para un programador se ha vuelto casi inherente.</p>
             </div>
 
             <div class="wrapper thing">
                 <h2>¿Ahora que sigue?</h2>
                 <hr class="subline">
 
-                <p>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos.</p>
+                <p class="indent"><span class="inside-idt"></span>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos, donde podras aprender los fundamentos y características únicas que trae consigo este paradigma, pasando de lo más básico hasta lo más avanzado.</p>
                 <br>
-                <p>Pasemos página y veamos más a fondo de que trata POO.</p>
+                <p class="indent"><span class="inside-idt"></span>Para los ejemplos que acompañan a la información consiguiente se utilizará una metodología práctica, donde se empleará un <a href="" class="link-deco">juego popular</a>  para la creación de ejemplos, objetos y características del parádigma con codigo en javascript.</p>
+                <br>
+                <p class="indent mg-b"><span class="inside-idt"></span>Pasemos página y veamos más a fondo de que trata POO.<a href="./components/content/objects.html" class="next inside-idt">Empezar con POO >></a>
+                </p>
 
 
             </div>
         </main>
-
-    <aside class="nav-index thing">
-        <h3>Indice de Contenidos</h3>
-        <hr class="subline">
-        <ul>
-            <li class="index-title">
-                <a href="#intro">
-                    <strong>Introducción al tema</strong>
-                </a>
-            </li>
-            <li class="index-sub"><a href="#">Qué es la Orientación a Objetos</a></li>
-            <li class="index-sub"><a href="#">POO vs otros paradigmas</a></li>
     
-            <li class="index-title">
-                <a href="#">
-                    <strong>Características de POO</strong>
-                </a>
-            </li>
-            <li class="index-sub"><a href="#">Encapsulamiento</a></li>
-            <li class="index-sub"><a href="#">Abstracción</a></li>
-            <li class="index-sub"><a href="#">Herencia</a></li>
-            <li class="index-sub"><a href="#">Polimorfismo</a></li>
-    
-            <li class="index-title">
-                <a href="#">
-                    <strong>Metodología de desarrollo</strong>
-                </a>
-            </li>
-            <li class="index-sub"><a href="#">Ciclo de vida</a></li>
-            <li class="index-sub"><a href="#">Lenguaje de modelado UML</a></li>
-            
-            <li class="index-title">
-                <a href="#">
-                    <strong>Análisis Orientado a Objetos</strong>
-                </a>
-            </li>
-            <li class="index-sub"><a href="#">Identificación de objetos y clases</a></li>
-            <li class="index-sub"><a href="#">Identificación de relaciones entre clases</a></li>
-            <li class="index-sub"><a href="#">Diagrama de clases de análisis</a></li>
-    
-            <li class="index-title">
-                <a href="#">
-                    <strong>Diseño Orientado a Objetos</strong>
-                </a>
-            </li>
-            <li class="index-sub"><a href="#">Atributos</a></li>
-            <li class="index-sub"><a href="#">Métodos</a></li>
-            <li class="index-sub"><a href="#">Relaciones entre clases</a></li>
-            <li class="index-sub"><a href="#">Clases abstractas</a></li>
-            <li class="index-sub"><a href="#">Diagrama de clases de diseño</a></li>
-            <li class="index-sub"><a href="#">Diagrama de paquetes</a></li>
-        </ul>
-    </aside>
+        <!-- Left Navegation Index Contend -->
+        <aside class="nav-index thing">
+            <h3>Indice de Contenidos</h3>
+            <hr class="subline">
+            <ul>
+                <li class="index-title">
+                    <a href="#intro">
+                        <strong>Introducción al tema</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><a href="#">Qué es la Orientación a Objetos</a></li>
+                <li class="index-sub"><a href="#">POO vs otros paradigmas</a></li>
+        
+                <li class="index-title">
+                    <a href="#">
+                        <strong>Características de POO</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><a href="#">Encapsulamiento</a></li>
+                <li class="index-sub"><a href="#">Abstracción</a></li>
+                <li class="index-sub"><a href="#">Herencia</a></li>
+                <li class="index-sub"><a href="#">Polimorfismo</a></li>
+        
+                <li class="index-title">
+                    <a href="#">
+                        <strong>Metodología de desarrollo</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><a href="#">Ciclo de vida</a></li>
+                <li class="index-sub"><a href="#">Lenguaje de modelado UML</a></li>
+                
+                <li class="index-title">
+                    <a href="#">
+                        <strong>Análisis Orientado a Objetos</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><a href="#">Identificación de objetos y clases</a></li>
+                <li class="index-sub"><a href="#">Identificación de relaciones entre clases</a></li>
+                <li class="index-sub"><a href="#">Diagrama de clases de análisis</a></li>
+        
+                <li class="index-title">
+                    <a href="#">
+                        <strong>Diseño Orientado a Objetos</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><a href="#">Atributos</a></li>
+                <li class="index-sub"><a href="#">Métodos</a></li>
+                <li class="index-sub"><a href="#">Relaciones entre clases</a></li>
+                <li class="index-sub"><a href="#">Clases abstractas</a></li>
+                <li class="index-sub"><a href="#">Diagrama de clases de diseño</a></li>
+                <li class="index-sub mg-b"><a href="#">Diagrama de paquetes</a></li>
+            </ul>
+        </aside>
 
-    <aside class="wrapper aside-content thing">
-        <h3 class="aside-h3">¿Quieres practicar con POO?</h3>
-        <hr class="subline">
+        <!-- Aside Contend -->
+        <aside class="wrapper aside-content thing">
+            <h3 class="aside-h3">¿Quieres practicar con POO?</h3>
+            <hr class="subline">
 
-        <p>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos.</p>
-        <br>
-        <p>Pasemos página y veamos más a fondo de que trata POO.</p>
+            <p>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos.</p>
+            <br>
+            <p>Pasemos página y veamos más a fondo de que trata POO.</p>
 
 
-    </aside>
-</div>
+        </aside>
 
+        <!-- Aside Refs Contend -->
+        <aside class="wrapper aside-content thing refs">
+            <h3 class="aside-h3">Recursos y Referencias</h3>
+            <hr class="subline">
+
+            <div class="indent">
+                <li class="index-sub list">
+                    <a class="ref-link" href="https://retina.elpais.com/retina/2018/03/22/tendencias/1521745909_941081.html">
+                        Definición de Algoritmo >>
+                    </a>
+                </li>
+                <li class="index-sub list">
+                    <a class="ref-link" href="https://runestone.academy/runestone/static/pythoned/Introduction/QueEsProgramacion.html">
+                        Definición de Programación >>
+                    </a>
+                </li>
+                <li class="index-sub list">
+                    <a href="#">
+
+                    </a>
+                </li>
+                <li class="index-sub list">
+                    <a class="ref-link" href="https://es.wikipedia.org/wiki/Programación_orientada_a_objetos">
+                        Programación orientada a objetos >>
+                    </a>
+                </li>
+                <li class="index-sub list"><a href="#"></a></li>
+                <li class="index-sub list mg-b">
+                    <a class="ref-link" href="https://styde.net/category/programacion-orientada-a-objetos/">
+                        Programación orientada a objetos >>
+                    </a>
+                </li>
+            </div>
+
+        </aside>
+        
+    </div>
+
+    <!-- Page Footer -->
     <div id="foot">
         <footer class="page-foot">
             <div class="container">
