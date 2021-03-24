@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The OOP: Programacion orientada a objetos</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/pagination.css">
+</head>
+<body>
+
+    <div class="container-nav">
+        <nav class="nav-main">
+            <a href="../../index.html"><img class="nav-brand" src="../../pictures/iujo-logo.png" alt="Iujo logo"></a>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../author.html">Apartado del autor</a></li>
+                <li><a href="../glosary.html">Glosario de terminos</a></li>
+                <li><a href="../help.html">Sección de Apoyo</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="search" src="../../icons/search.png" width="20px" alt="search">
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+
+    <div class="container">
+
+        <main class="main-content">
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h1 id="sub1" class="indent">Fundamentos de POO</h1>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Comenzando con la teoría: ya has aprendido el punto de partida para la POO, y es el modelado de objetos, sus propiedades y funciones, pero la POO tiene sus reglas y su manera de hacer las cosas para conseguir la eficiencia. Por ello debemos introducirnos en la parte más técnica de este paradigma, la teoría, para darnos cuenta de cómo trabaja la POO.    
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Como se vio en las ventajas que ofrece POO, esta nos permite realizar varias cosas, pero se debe a las características fundamentales del paradigma, cosas que lo hacen único, y son las mismas por las cuales se ha vuelto tan popular.
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Para poder programar en un lenguaje de POO hay que tener claro una serie de conceptos fundamentales como son Objeto, Clase, Herencia, Método, Evento, Atributos y propiedades. Estos conceptos amplían y superan conceptos ya conocidos de la programación tradicional.
+                    </p>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h2 id="sub2" class="indent">Encapsulamiento</h2>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Decimos que el encapsulamiento en la programación orientada a objetos es cuando limitamos el acceso o damos un acceso restringido de una propiedad a los elementos que necesita un miembro y no a ninguno más. El elemento más común de encapsulamiento son las clases, donde encapsulamos y englobamos tanto métodos como propiedades.    
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        El encapsulamiento puede darse cuando realizamos un abstracción en una clase para luego instanciar un objeto no se necesita conocer a fondo la implementación solo se necesita poder instanciar esa clase, tampoco necesitas conocer todas las propiedades de un objeto o acceder a ellas de forma directa, podemos crear diferentes métodos y forzar a utilizar métodos definidos para modificar estas propiedades.
+                    </p>
+                    <br>
+                    <br>
+                    <div class="container center">
+                       <img class="container-img" src="../../pictures/encapsulation.PNG"> 
+                    </div>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h2 id="sub3" class="indent">Abstracción</h2>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        El término abstracción se entiende popularmente en algunas ocasiones con un significado contrario al que tiene en realidad. Cuando algo parece excesivamente complejo o de difícil entendimiento (por ejemplo, una obra de arte), se suele expresar, “es muy abstracto”. Sin embargo, por el contrario, la abstracción es el filtro utilizado para quedarse con lo que se considera esencial, eliminando toda la complejidad innecesaria.    
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        La abstracción es la habilidad que le permite al ser humano combatir la complejidad al considerar sólo lo esencial del objeto o fenómeno que se esté analizando.    
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Hay dos aspectos muy importantes para llevar a cabo la abstracción, el primero es el proceso de generalización para identificar la esencia del objeto, y el segundo el proceso de eliminación de los detalles para enfocar la atención en determinadas propiedades del objeto. El desarrollo de las habilidades de abstracción se logra a través del análisis, el diseño y el modelado de soluciones por medio de algoritmos, programas, estructuras de datos abstractas, etc.    
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Si has leído este concepto de la abstracción y te ha resultado familiar, es porque ya lo has realizado con anterioridad, como: “pensar en objetos”, y es por eso que este es un fundamento clave de la POO, permite al ser humano llevar un proceso de análisis sencillo que lo lleva a diseñar objetos y modelar las soluciones.
+                    </p>
+                    <br><br>
+                    <div class="container center">
+                       <img class="container-img" src="../../pictures/abstract.PNG"> 
+                    </div>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h2 id="sub4" class="indent">Herencia</h2>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Uno de los fundamentos más poderosos en POO es, talvez, la reutilización de código. Los diseños estructurados proporcionan código reusado en una cierta extensión (puedes hacer un procedimiento y usarlo tantas veces como quieras). De cualquier manera, el diseño OO va un paso mas allá, permitiendo definir relaciones entre clases que facilitan no solo la reutilización de código, pero también el diseño en general.
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        La herencia permite a una clase heredar los atributos y métodos de otra clase. Esto permite la creación de nuevas clases abstrayendo atributos y funcionalidad comunes. La herencia permite crear una nueva clase a partir de una clase existente, esto quiere decir que la clase nueva (hija) hereda todos los atributos y métodos de la clase principal (padre) siempre y cuando el nivel de acceso lo permita.
+                    </p>
+                    <br>
+                    <br>
+                    <div class="container center">
+                       <img class="container-img" src="../../pictures/herency.PNG"> 
+                    </div>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h2 id="#sub5" class="indent">Polimorfismo</h2>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Denominamos polimorfismo al mecanismo que nos permite tener un método en una clase padre como vimos en la herencia y sobrescribirlo en la clase hija.  Esto quiere decir que tendremos el mismo método en ambas clases, pero en la clase hija realizara diferentes acciones. Por lo que el polimorfismo es también denominado sobreescritura de métodos.    
+                    </p>
+                    <br>
+                    <br>
+                    <div class="container center">
+                       <img class="container-img" src="../../pictures/polimorfism.PNG"> 
+                    </div>
+                    <br>
+                </article>
+                <br>
+            </div>
+
+            <!-- Pagination -->
+            <div class="container">
+                <div id="wrap" class="wrapper center">
+                    <div  class="pagination center">
+                        <a href="./elements.html">&laquo;</a>
+                        <a href="./objects.html">1</a>
+                        <a href="./advantage.html">2</a>
+                        <a href="./elements.html" >3</a>
+                        <a href="#" class="active">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <!-- Left Navegation Index Contend -->
+    <aside class=" wrapper nav-index thing">
+        <h3>Indice de Contenidos</h3>
+        <hr class="subline">
+        <ul>
+            <li class="index-title">
+                <a href="../../index.html">
+                    <strong>Introducción al Tema</strong>
+                </a>
+            </li>
+            <li class="index-sub"><a href="../../index.html">Qué es la Orientación a Objetos</a></li>
+            <li class="index-sub" ><span class="inside-idt"></span>
+                <a href="../../index.html">¿Cómo Pensar en Objetos?</a></li>
+            <li class="index-sub"><span class="inside-idt"></span>
+                <a href="../../index.html">Definiendo un Objeto</a></li>
+            <li class="index-sub"><span class="inside-idt"></span>
+                <a href="../../index.html">POO vs Otros Paradigmas</a></li>
+
+            <li class="index-title">
+                <a href="./advantage.html">
+                    <strong>Ventajas de POO</strong>
+                </a>
+            </li>
+            <li class="index-sub">
+                <a href="./advantage.html">Modificabilidad</a></li>
+            <li class="index-sub">
+                <a href="./advantage.html">Gestión de los Errores</a></li>
+            <li class="index-sub">
+                <a href="./advantage.html">Trabajo en Equipo</a></li>
+            <li class="index-sub">
+                <a href="./advantage.html">Herencia</a></li>
+            <li class="index-sub">
+                <a href="./advantage.html">Reducción de Costos</a></li>
+
+            <li class="index-title">
+                <a href="./elements.html">
+                    <strong>Elementos de POO</strong>
+                </a>
+            </li>
+            <li class="index-sub"><a href="./elements.html">Clase</a></li>
+            <li class="index-sub"><a href="./elements.html">Objeto</a></li>
+            <li class="index-sub"><a href="./elements.html">Atributos</a></li>
+            <li class="index-sub"><a href="./elements.html">Método</a></li>
+            <li class="index-sub"><a href="./elements.html">Evento</a></li>
+    
+            <li class="index-title">
+                <a href="#sub1">
+                    <strong>Fundamentos de POO</strong>
+                </a>
+            </li>
+            <li class="index-sub"><a href="#sub2">Encapsulamiento</a></li>
+            <li class="index-sub"><a href="#su3">Abstracción</a></li>
+            <li class="index-sub"><a href="#sub4">Herencia</a></li>
+            <li class="index-sub"><a href="#sub5">Polimorfismo</a></li>
+    
+        </ul>
+    </aside>
+    
+    <!-- Aside Contend -->
+    <aside class="wrapper aside-content thing">
+        <h3 class="aside-h3">¿Quieres practicar con POO?</h3>
+        <hr class="subline">
+
+        <p>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos.</p>
+        <br>
+        <p>Pasemos página y veamos más a fondo de que trata POO.</p>
+    </aside>
+
+    <!-- Aside Refs Contend -->
+    <aside class="wrapper aside-content thing refs">
+        <h3 class="aside-h3">Recursos y Referencias</h3>
+        <hr class="subline">
+
+        <div class="indent">
+            <li class="index-sub list">
+                <a class="ref-link" href="https://laraveles.com/series/poo/encapsulamiento-programacion-orientada-objetos/">
+                    Encapsulamiento en Programación Orientada a Objetos >>
+                </a>
+            </li>
+            <li class="index-sub list">
+                <a class="ref-link" href="https://runestone.academy/runestone/static/pythoned/Introduction/QueEsProgramacion.html">
+                    Definición de Programación >>
+                </a>
+            </li>
+            <li class="index-sub list">
+                <a class="ref-link" href="Abstracción - ¿Qué es, como desarrollarla?">
+                    Abstracción - ¿Qué es, como desarrollarla?
+                </a>
+            </li>
+            <li class="index-sub list">
+                <a class="ref-link" href="https://es.ccm.net/contents/411-poo-herencia">
+                    ¿Qué es la herencia en programación? >>
+                </a>
+            </li>
+            <li class="index-sub list"><a href="#"></a></li>
+            <li class="index-sub list">
+                <a class="ref-link" href="https://platzi.com/tutoriales/1474-oop/9305-herencia-en-poo/#:~:text=La%20herencia%20permite%20a%20una%20clase%20heredar%20los,en%20com%C3%BAn%20de%20las%20varias%20clases%20que%20existen.">
+                    Herencia en POO >>
+                </a>
+            </li>
+            <li class="index-sub list"><a href="#"></a></li>
+            <li class="index-sub list mg-b">
+                <a class="ref-link" href="https://desarrolloweb.com/articulos/herencia-en-programacion-orientada-objetos.html">
+                    Concepto de herencia en la programación orientada a objetos: un mecanismo básico por el que las clases hijas heredan el código de las clases padre. >>
+                </a>
+            </li>
+        </div>
+
+    </aside>
+    </div>
+
+    <!-- Page Footer -->
+    <div id="foot">
+        <footer class="page-foot">
+            <div class="container">
+                <a href=""><img class="img-b" src="../../icons/facebook.png" alt="facebook"></a>
+                <a href=""><img class="img-b" src="../../icons/instagram.png" alt="instagram"></a>
+                <p id="foo" class="border-bottom">Copyright © All rights reserved to I.U.J.O</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../dynamic.js"></script>
+</body>
+</html>
+
+
+

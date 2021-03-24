@@ -1,0 +1,39 @@
+pre {
+    background: #3d3d3d;
+    border: 1px solid #ddd;
+    border-left: 6px solid #00ff99;
+    border-radius: 1.5rem;
+    color: rgb(255, 255, 255);
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 0.8;
+    max-width: 82%;
+    overflow: auto;
+    padding: 0px 20px;
+    display: block;
+    word-wrap: break-word;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+  }
+
+pre:hover{
+    background-color: #272727;
+    box-shadow: #00ff993a 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.class{
+  color: #c678dd;
+}
+
+.object{
+  color: #00ff99;
+}
+
+.property{
+  color: #e06c75;
+}
+
+.method{
+  color: #69ccf3;
+}

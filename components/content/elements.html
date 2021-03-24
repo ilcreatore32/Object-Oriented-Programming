@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The OOP: Programacion orientada a objetos</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/pagination.css">
+    <link rel="stylesheet" href="../../styles/pre-tag.css">
+</head>
+<body>
+
+    <div class="container-nav">
+        <nav class="nav-main">
+            <a href="../../index.html"><img class="nav-brand" src="../../pictures/iujo-logo.png" alt="Iujo logo"></a>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../author.html">Apartado del autor</a></li>
+                <li><a href="../glosary.html">Glosario de terminos</a></li>
+                <li><a href="../help.html">Sección de Apoyo</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="search" src="../icons/search.png" width="20px" alt="search">
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+
+    <div class="container">
+
+        <main class="main-content">
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h1 id="sub1" class="indent">Elementos de POO</h1>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Comenzando con la teoría: ya has aprendido el punto de partida para la POO, y es el modelado de objetos, sus propiedades y funciones, pero la POO tiene sus reglas y su manera de hacer las cosas para conseguir la eficiencia. Por ello debemos introducirnos en la parte más técnica de este paradigma, la teoría, para darnos cuenta de cómo trabaja la POO.    
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Como se vio en las ventajas que ofrece POO, esta nos permite realizar varias cosas, pero se debe a las Elementos fundamentales del paradigma, cosas que lo hacen único, y son las mismas por las cuales se ha vuelto tan popular.
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Para poder programar en un lenguaje de POO hay que tener claro una serie de conceptos fundamentales como son Objeto, Clase, Herencia, Método, Evento, Atributos y propiedades. Estos conceptos amplían y superan conceptos ya conocidos de la programación tradicional.
+                    </p>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h1 id="sub2" class="indent">Clases</h1>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Una clase es una plantilla. Define de manera genérica cómo van a ser los objetos de un determinado tipo. Esta es una definición bastante simple pero a su vez muy acertada, pues una clase hace referencia exactamente a eso, una plantilla, un molde, algo con características predeterminadas para ser utilizado y así crear algo más a partir de ese molde.
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Retomemos el ejemplo anterior, la espada, antes de existir una espada debe de haber ese molde que nos facilite la creación de la misma, pues pensar en atributos para cada espada es repetitivo e innecesario si estos suelen ser parecidos.
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br> <span class="class">class</span> <span class="object">Espada</span> {
+                                    <br>    <span class="class">constructor</span> (<span class="property">tamaño</span>, <span class="property">material</span>) {
+                                      <br>      <span class="object">this</span>.<span class="property">tamaño</span> = <span class="property">tamaño</span>+<span class="object">"m"</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">material</span> = <span class="property">material</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">durabilidad</span> = <span class="object">100</span>;
+                                      <br>      }
+                                      <br>  };
+                                </code>
+                            </div>
+                        </pre>
+
+                    </div>
+                        
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Entonces como ves, al tener clases estas nos sirve como una plantilla de la cual se pueden derivar más de un objeto, cada vez que realizamos este proceso se conoce instanciar un objeto. De esta manera, con instancias, derivamos objetos de una clase y estos obtienen características de manera hereditaria, como padre e hijo, lo que nos lleva al siguiente punto.
+                    </p>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h1 id="sub2" class="indent">Objetos</h1>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Un objeto es una entidad que tiene un determinado estado, comportamiento e identidad, los objetos representan o son cosas. Esta es una definición de objetos, aunque acertada, poco intuitiva, he aquí una más: Un objeto es una colección de datos relacionados y/o funcionalidad (que generalmente consta de algunas variables y funciones, que se denominan propiedades y métodos cuando están dentro de objetos).    
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Si tomamos el ejemplo que realizamos anteriormente, la clase (plantilla), podremos instanciar un objeto, o en este caso una espada, para ello es necesario introducir los parámetros en la plantilla, veamos:    
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br>  <span class="class">const</span> <span class="object">espadaPiedra</span> = <span class="class">new</span> <span class="object">Espada</span>(<span class="property">0.5</span>, <span class="property">“Piedra”</span>));<br>
+                                    <br>    <span class="object">console</span>.<span class="method">log</span>(<span class="object">espadaPiedra</span>);
+                                    <br>
+                                    <br>    <span class="method">console output</span>:
+                                    <br>        <span class="object">espadaPiedra</span>
+                                    <br>            <span class="property">tamaño</span>: <span class="object">"0.5m"</span>,
+                                    <br>            <span class="property">material</span>: <span class="object">"Piedra"</span>,
+                                    <br>            <span class="property">durabilidad</span>: <span class="object">100</span>;
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Vemos que en respuesta obtenemos por consola el código mostrado, lo que significa que hemos instanciado correctamente nuestra espada de piedra, de igual forma podemos crear más de un objeto tan solo teniendo nuestra clase a disposición.    
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br>  <span class="class">const</span> <span class="object">espadaDiamante</span> = <span class="class">new</span> <span class="object">Espada</span>(<span class="property">0.6</span>, <span class="property">“Diamante”</span>));<br>
+                                    <br>    <span class="object">console</span>.<span class="method">log</span>(<span class="object">espadaDiamante</span>);
+                                    <br>
+                                    <br>    <span class="method">console output</span>:
+                                    <br>        <span class="object">espadaDiamante</span>
+                                    <br>            <span class="property">tamaño</span>: <span class="object">"0.6m"</span>,
+                                    <br>            <span class="property">material</span>: <span class="object">"Diamante"</span>,
+                                    <br>            <span class="property">durabilidad</span>: <span class="object">100</span>;
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h1 id="sub2" class="indent">Atributos</h1>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        En POO cada objeto dispone de una serie de atributos que definen sus características individuales y le permiten diferenciarse de otros (apariencia, estado, etc).
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Como se ha expuesto con anterioridad, los objetos están compuestos por varios elementos, entre ellos, atributos, y estos son datos de los que se vale el objeto para funcionar o incluso simplemente para existir. Estos representas las características o propiedades que puede tener un objeto y pueden ser prácticamente cualquier cosa: en nuestro objeto espada tenemos una cadena de texto y un número. Veamos más ejemplos de atributos que podría tener espada: 
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br> <span class="class">class</span> <span class="object">bigEspada</span>{
+                                      <br>    <span class="class">constructor</span> (<span class="property">tamaño</span>, <span class="property">material1</span>,<span class="property">material2</span>){
+                                      <br>      <span class="object">this</span>.<span class="property">color</span> = <span class="object">"#00ff99"</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">attackPoints</span> = <span class="object">80 </span>+<span class="object">" Attacks points"</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">tamaño</span> = <span class="property">tamaño</span>+<span class="object">"m"</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">material</span> = [<span class="property">material1</span>, <span class="property">material2</span>];
+                                      <br>      <span class="object">this</span>.<span class="property">durabilidad</span> = <span class="object">100</span>;
+                                      <br>   }
+                                      <br> }
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Y así sin más, hemos creado otra plantilla para hacer espadas más grandes, con más atributos, de diferentes tipos de datos incluso hasta con dos materiales en conjunto. Veamos ahora la bigEspada: 
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br> <span class="class">const</span> <span class="object">espadaSamurai</span> = <span class="class">new</span> <span class="object">bigEspada</span>(<span class="property">1</span>, <span class="property">"Acero"</span>, <span class="property">"Oro"</span>, <span class="property">80</span>);
+                                      <br>
+                                      <br>      <span class="object">console</span>.<span class="method">log</span>(<span class="object">espadaSamurai</span>);
+                                      <br>
+                                      <br>  <span class="method">console output</span>:
+                                      <br>      <span class="object">bigEspada</span>
+                                      <br>          <span class="property">color</span>: <span class="object">"#00ff99"</span>
+                                      <br>          <span class="property">attackPoints</span>: <span class="object">"80 Attacks points"</span>
+                                      <br>          <span class="property">tamaño</span>: <span class="object">"1m"</span>
+                                      <br>          <span class="property">material</span>: <span class="object">Array(2)</span>
+                                      <br>          <span class="property">0</span>: <span class="object">"Acero"</span>
+                                      <br>          <span class="property">1</span>: <span class="object">"Oro"</span>
+                                      <br>          <span class="property">length</span>: <span class="object">2</span>
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h1 id="sub2" class="indent">Métodos</h1>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Es una subrutina que puede pertenecer a una clase u objeto, y son una serie de sentencias para llevar a cabo una acción.
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Un método, en palabras sencillas, son acciones, verbos por decirlo de manera literaria. Estas acciones van relacionadas al objeto que pertenecen y estas se ejecutan según las propiedades o atributos del objeto en cuestión.
+                    </p>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Para nuestra espada, una acción evidente, seria atacar o cortar, algo que toda arma dentro de un juego debería poder realizar, entonces tratemos de representar esta acción en nuestras espadas:
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br><span class="class">class</span> <span class="object">Espada</span> {
+                                      <br>  <span class="class">constructor</span> (<span class="property">tamaño</span>, <span class="property">material</span>, <span class="property">attackPoints</span>){
+                                      <br>      <span class="object">this</span>.<span class="property">tamaño</span> = <span class="property">tamaño</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">attackPoints</span> = <span class="property">attackPoints</span>+<span class="object">" Attacks points"</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">material</span> = <span class="property">material</span>;
+                                      <br>      <span class="object">this</span>.<span class="property">durabilidad</span> = <span class="object">100</span>;
+                                      <br>  }
+                                      <br>
+                                      <br>  <span class="class">get</span> <span class="method">atack</span>(){
+                                      <br>      <span class="class">return</span> <span class="object">this</span>.<span class="method">calAtack</span>()
+                                      <br>  }
+                                      <br>
+                                      <br>  <span class="method">calAtack</span>(){
+                                      <br>      <span class="class">return</span> <span class="object">this</span>.<span class="property">attackPoints</span>;
+                                      <br>  }
+                                      <br>}
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Una vez que nuestras espadas son dotadas de los métodos necesarios para atacar y calcular el daño del ataque solo resta ejecutar el método para atacar a nuestro enemigo.
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br><span class="object">console</span>.<span class="method">log</span>(<span class="object">espadaPiedra</span>.<span class="property">atack</span>);
+                                      <br>
+                                      <br>  <span class="method">console output</span>:
+                                      <br>      <span class="object">61 Attacks points</span> 
+                                      <br>
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Listo! por consola hemos recibido el daño de la espada (atackPoints). Ahora somos capaces de crear las acciones que realizan nuestros objetos.
+                    </p>
+                    <br>
+                </article>
+            </div>
+
+            <div class="wrapper thing">
+                <article class="art">
+                    <h1 id="sub2" class="indent">Eventos</h1>
+                    <hr class="subline">
+
+                    <p class="indent"><span class="inside-idt"></span>
+                        Cuando se habla de eventos nos referimos a la interacción entre objetos, se crean métodos que reaccionan ante ciertas circunstancias (eventos) y estos métodos a su vez se activan y son ejecutados. Entonces un evento en POO seria esa interconexión  entre objetos cuando ciertas circunstancias ocurren. Veamos esto con un ejemplo:
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br><span class="class">class</span> <span class="object">enemy</span>{
+                                      <br>  <span class="class">constructor</span> (<span class="property">vida</span>){
+                                      <br>      <span class="object">this</span>.<span class="property">vida</span> = <span class="property">vida</span>;
+                                      <br>  }
+                                      <br>  
+                                      <br>  <span class="method">handleAtack</span>(<span class="property">atack</span>){
+                                      <br>      <span class="class">return</span> <span class="object">this</span>.<span class="property">vida</span> = <span class="object">this</span>.<span class="property">vida</span> - <span class="property">atack</span>;
+                                      <br>  }
+                                      <br>}
+                                      <br>
+                                      <br><span class="class">const</span> <span class="object">skeletor</span> = <span class="class">new</span> <span class="object">enemy</span>(<span class="property">300</span>);
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Para interactuar con nuestra espada, creamos un nuevo objeto (enemy) un enemigo al cual atacar con nuestro nuevo método (atack). Después de ser creado lo dotamos de un nombre para instanciarlo “skeletor” y le asignamos una cantidad para su vida.
+                    </p>
+                    <br>
+                    <div class="container">
+                        <pre class="container">
+                            <div class="code-snippet">
+                                <code><br>  <span class="class">let</span> <span class="property">atack</span> = <span class="object">espadaPiedra</span>.<span class="property">atack</span>;
+                                      <br>
+                                      <br>  <span class="object">console</span>.<span class="method">log</span>(<span class="object">"Atacar a skeletor*: "</span>+<span class="object">espadaPiedra</span>.<span class="property">atack</span>+<span class="object">"!"</span>);
+                                      <br>  <span class="object">console</span>.<span class="method">log</span>(<span class="object">"Daño critico, vida restante: "</span>+<span class="object">skeletor</span>.<span class="method">handleAtack</span>(<span class="property">atack</span>));
+                                      <br>
+                                      <br>  <span class="object">console</span>.<span class="method">log</span>(<span class="object">"Atacar a skeleto*: "</span>+<span class="object">espadaPiedra</span>.<span class="property">atack</span>+<span class="object">"!"</span>);
+                                      <br>  <span class="object">console</span>.<span class="method">log</span>(<span class="object">"Daño critico, vida restante: "</span>+<span class="object">skeletor</span>.<span class="method">handleAtack</span>(<span class="property">atack</span>));
+                                      <br>  
+                                      <br>  <span class="method">console output</span>:
+                                      <br>      <span class="object">Atacar a skeleto*: 61!</span>
+                                      <br>      <span class="object">Daño critico, vida restante: 239</span>
+                                      <br>
+                                      <br>      <span class="object">Atacar a skeleto*: 61!</span>
+                                      <br>      <span class="object">Daño critico, vida restante: 178</span>
+                                </code>
+                            </div>
+                        </pre>
+                    </div>
+                    <br>
+                    <p class="indent"><span class="inside-idt"></span>
+                        Por último, asignamos el valor del ataque de la espada a una variable para fácil acceso al dato, y mostramos por consola la interacción entre el ataque de la espada y el daño recibido por la vida del enemigo. Y listo! nuevamente hemos superado otra etapa de la POO, sabiendo estos elementos podemos crear objetos sencillos y agregar la funcionalidad, a partir de este código puedes empezar a practicar, agregando más métodos, condicionales y más, un paso a seguir para agregar más funcionalidad seria condicionar el ataque de la espada para hacer daño según su durabilidad y hacer que la vida del enemigo acabe al llegar a 0 y ya no sea un objeto atacable, en tal caso, debemos hacerlo saber. Pero la POO puede ir más allá, como se observara en sus fundamentos. 
+                    </p>
+                    <br>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="container">
+                <div class="container-paging">
+                    <div class="pagination">
+                        <a href="./advantage.html">&laquo;</a>
+                        <a href="./objects.html">1</a>
+                        <a href="./advantage.html">2</a>
+                        <a href="#" class="active">3</a>
+                        <a href="./fundamentals.html">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="./fundamentals.html">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <!-- Left Navegation Index Contend -->
+    <aside class=" wrapper nav-index thing">
+        <h3>Indice de Contenidos</h3>
+        <hr class="subline">
+        <ul>
+            <li class="index-title">
+                <a href="../../index.html">
+                    <strong>Introducción al Tema</strong>
+                </a>
+            </li>
+            <li class="index-sub"><a href="#sub1">Qué es la Orientación a Objetos</a></li>
+            <li class="index-sub" ><span class="inside-idt"></span>
+                <a href="#sub2">¿Cómo Pensar en Objetos?</a></li>
+            <li class="index-sub"><span class="inside-idt"></span>
+                <a href="#sub3">Definiendo un Objeto</a></li>
+            <li class="index-sub"><span class="inside-idt"></span>
+                <a href="#sub4">POO vs Otros Paradigmas</a></li>
+            <li class="index-title">
+                <a href="./advantage.html">
+                    <strong>Ventajas de POO</strong>
+                </a>
+            </li>
+            <li class="index-sub">
+                <span class="inside-idt"></span>
+                <a href="./advantage.html">Modificabilidad</a></li>
+            <li class="index-sub">
+                <span class="inside-idt"></span>
+                <a href="./advantage.html">Gestión de los Errores</a></li>
+            <li class="index-sub">
+                <span class="inside-idt"></span>
+                <a href="./advantage.html">Trabajo en Equipo</a></li>
+            <li class="index-sub">
+                <span class="inside-idt"></span>
+                <a href="./advantage.html">Herencia</a></li>
+            <li class="index-sub">
+                <span class="inside-idt"></span>
+                <a href="./advantage.html">Reducción de Costos</a></li>
+    
+                <li class="index-title">
+                    <a href="#sub1">
+                        <strong>Elementos de POO</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><a href="#sub2">Clases</a></li>
+                <li class="index-sub"><a href="#sub3">Objetos</a></li>
+                <li class="index-sub"><a href="#sub4">Atributos</a></li>
+                <li class="index-sub"><a href="#sub5">Métodos</a></li>
+                <li class="index-sub"><a href="#sub6">Eventos</a></li>
+
+                <li class="index-title">
+                    <a href="./fundamentals.html">
+                        <strong>Fundamentos de POO</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><a href="./fundamentals.html">Encapsulamiento</a></li>
+                <li class="index-sub"><a href="./fundamentals.html">Abstracción</a></li>
+                <li class="index-sub"><a href="./fundamentals.html">Herencia</a></li>
+                <li class="index-sub"><a href="./fundamentals.html">Polimorfismo</a></li>
+
+            <li class="index-title">
+                <a href="#">
+                    <strong>Metodología de desarrollo</strong>
+                </a>
+            </li>
+            <li class="index-sub"><a href="#">Ciclo de vida</a></li>
+            <li class="index-sub"><a href="#">Lenguaje de modelado UML</a></li>
+            
+            <li class="index-title">
+                <a href="#">
+                    <strong>Análisis Orientado a Objetos</strong>
+                </a>
+            </li>
+            <li class="index-sub"><a href="#">Identificación de objetos y clases</a></li>
+            <li class="index-sub"><a href="#">Identificación de relaciones entre clases</a></li>
+            <li class="index-sub"><a href="#">Diagrama de clases de análisis</a></li>
+    
+            <li class="index-title">
+                <a href="#">
+                    <strong>Diseño Orientado a Objetos</strong>
+                </a>
+            </li>
+            <li class="index-sub"><a href="#">Atributos</a></li>
+            <li class="index-sub"><a href="#">Métodos</a></li>
+            <li class="index-sub"><a href="#">Relaciones entre clases</a></li>
+            <li class="index-sub"><a href="#">Clases abstractas</a></li>
+            <li class="index-sub"><a href="#">Diagrama de clases de diseño</a></li>
+            <li class="index-sub mg-b"><a href="#">Diagrama de paquetes</a></li>
+        </ul>
+    </aside>
+    
+    <!-- Aside Contend -->
+    <aside class="wrapper aside-content thing">
+        <h3 class="aside-h3">¿Quieres practicar con POO?</h3>
+        <hr class="subline">
+
+        <p>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos.</p>
+        <br>
+        <p>Pasemos página y veamos más a fondo de que trata POO.</p>
+
+
+    </aside>
+
+    <!-- Aside Refs Contend -->
+    <aside class="wrapper aside-content thing refs">
+        <h3 class="aside-h3">Recursos y Referencias</h3>
+        <hr class="subline">
+
+        <div class="indent">
+            <li class="index-sub list">
+                <a class="ref-link" href="https://retina.elpais.com/retina/2018/03/22/tendencias/1521745909_941081.html">
+                    Definición de Algoritmo >>
+                </a>
+            </li>
+            <li class="index-sub list">
+                <a class="ref-link" href="https://runestone.academy/runestone/static/pythoned/Introduction/QueEsProgramacion.html">
+                    Definición de Programación >>
+                </a>
+            </li>
+            <li class="index-sub list">
+                <a href="#">
+
+                </a>
+            </li>
+            <li class="index-sub list">
+                <a class="ref-link" href="https://es.wikipedia.org/wiki/Programación_orientada_a_objetos">
+                    Programación orientada a objetos >>
+                </a>
+            </li>
+            <li class="index-sub list"><a href="#"></a></li>
+            <li class="index-sub list mg-b">
+                <a class="ref-link" href="https://styde.net/category/programacion-orientada-a-objetos/">
+                    Programación orientada a objetos >>
+                </a>
+            </li>
+        </div>
+
+    </aside>
+    
+
+    <!-- Aside Contend -->
+    <aside class="wrapper aside-content thing">
+        <h3 class="aside-h3">¿Quieres ver el código en ejecución?</h3>
+        <hr class="subline">
+        <p>Accede al apartado "inspeccionar elemento" de tu navegador, solo solo haz click derecho sobre cualquier superficie del portal web y dirígete al apartado de consola, donde observaras el código en ejecución de los ejemplos.</p>
+    </aside>
+    </div>
+    <!-- Page Footer -->
+    <div id="foot">
+        <footer class="page-foot">
+            <div class="container">
+                <a href=""><img class="img-b" src="../../icons/facebook.png" alt="facebook"></a>
+                <a href=""><img class="img-b" src="../../icons/instagram.png" alt="instagram"></a>
+                <p id="foo" class="border-bottom">Copyright © All rights reserved to I.U.J.O</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../dynamic.js"></script>
+</body>
+</html>
+
+
+

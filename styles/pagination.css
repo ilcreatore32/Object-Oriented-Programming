@@ -1,10 +1,17 @@
 /* Pagination links */
+.pagination{
+    background-color: #fff;
+    width: auto;
+    padding: 10px;
+    float: left;
+    border-radius: 6rem
+}
+
 .pagination a {
     color: rgb(27, 27, 27);
-    float: left;
     padding: 8px 16px;
     text-decoration: none;
-    transition: background-color .4s;
+    float: left;
 }
   
 /* Active/Current link */
@@ -14,20 +21,18 @@
     border-radius: 5rem;
 }
   
-/* Grey Color Hover */
+/* Green Color Hover */
 .pagination a:hover:not(.active) {
     background-color: #ddd;
     background-color: #00ff9941;
     border-radius: 5rem;
 }
 
-.container-paging{
-    float: left;
-    background-color: #fff;
-    border-radius: 0.5rem; 
+.pagination a:hover{
+    box-shadow: #00ff99d5 0px 0px 16px;
 }
 
-.pagination{
-       
-    background-color: #fff;
+#wrap{
+    background-color: transparent !important;
 }
+

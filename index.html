@@ -7,6 +7,7 @@
     <title>The OOP: Portal informativo</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="/styles/roboto.css">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
             </ul>
             <ul>
                 <li>
-                    <img class="search" src="./icons/search-13-24.png" alt="search">
+                    <img class="search" src="./icons/search.png" width="20px" alt="search">
                 </li>
             </ul>
         </nav>
@@ -46,13 +47,12 @@
                 <h2>Proposito del Portal</h2>
                 <hr class="subline">
 
-                <p><span class="inside-idt">El</span> objetivo de "programacion orientada a objetos" o OOP en ingles. Un area informativa principalmente destinada a aquellos estudiantes del segundo y tercer semestre interesados por apredender de POO.</p>
+                <p class="indent"><span class="inside-idt">Aqui</span> encontraras los fundamentos de POO y una guia a traves de los diferentes conceptos que lo componen. Si ya eres conocedor del tema y buscas algo en especifico te invitamos a visitar el glosario de terminos, donde podras encontrar el contenido mas destacado en orden alfabetico.</p>
+                <br>
 
-                <p><span class="inside-idt">Aqui</span> encontraras los fundamentos de POO y una guia a traves de los diferentes conceptos que lo componen. Si ya eres conocedor del tema y buscas algo en especifico te invitamos a visitar el glosario de terminos, donde podras encontrar el contenido mas destacado en orden alfabetico.</p>
-
-                <p><span class="inside-idt">De</span> igual forma puedes ver el indice del contenido informativo en todas las interfaces del portal web, alli tambien encontraras de forma ordenada los contenidos.</p>
+                <p class="indent"><span class="inside-idt">De</span> igual forma puedes ver el indice del contenido informativo en todas las interfaces del portal web, alli tambien encontraras de forma ordenada los contenidos. De lo contrario, empecemos por una indrotuccion al tema, y para hablar de programacion orientada a objetos, debemos comenzar por la programacion en si y sus fundamentos.</p>
+                <br>
     
-                <p><span class="inside-idt">De</span> lo contrario, empecemos por una indrotuccion al tema, y para hablar de programacion orientada a objetos, debemos comenzar por la programacion en si y sus fundamentos.</p>
             </div>
 
             <div class="wrapper thing">
@@ -66,10 +66,13 @@
                 <p class="indent"><span class="inside-idt">Entonces</span> programación es la acción de tomar un algoritmo y codificarlo en una notación (lenguaje de programación), de modo que pueda ser ejecutado o interpretado por una computadora, con el propósito de, nuevamente, solventar un problema.</p>
                 <br>
                 <p class="indent mg-b"><span class="inside-idt">Un</span> paradigma es un modelo o un estilo de programación que nos da unas guías sobre cómo trabajar y así conseguir la solución deseada. Entonces se podría definir a un paradigma de programación como un enfoque, una manera específica de atacar un problema a través de la programación.</p>
+                <br>
+            </div>
 
-                <h3><span class="inside-idt"></span>El paradigma: POO</h3>
+            <div class="wrapper thing">
+                <h3 id="intro">El paradigma: POO</h3>
                 <hr class="subline">
-
+            
                 <p class="indent"><span class="inside-idt">El</span> paradigma con el que la mayoría aprendimos a programar (incluyéndome) es el secuencial o estructurado, aquí las instrucciones van de arriba hacia abajo, no tenemos que pensar en cosas complejas, simplemente damos ordenes (algoritmo) una tras otra, tras otra y así sucesivamente. Con el paso del tiempo este enfoque se ha quedado muy atrás para el desarrollo de sistemas o apps complejas, por lo que se adoptan otros estilos de programación para llevar un desarrollo más eficiente, como la programación orientada a objetos.</p>
                 <br>
                 <p class="indent"><span class="inside-idt">Con</span> el paradigma de Programación orientado a objetos lo que buscamos es dejar de centrarnos en la lógica pura de los programas, para empezar a pensar en objetos, lo que constituye la base de este paradigma. Esto nos ayuda muchísimo en sistemas grandes, ya que, en vez de pensar en funciones, pensamos en las relaciones o interacciones de los diferentes componentes del sistema.</p>
@@ -77,6 +80,7 @@
                 <p class="indent"><span class="inside-idt">La</span> programación orientada a objetos o “POO” es un paradigma surgido en los años 1970, que utiliza objetos como elementos fundamentales en la construcción de la solución. Como su nombre lo indica se utilizan objetos para diseñar sus aplicaciones y no algoritmos; un objeto es una abstracción de algún hecho o ente del mundo real, con atributos que representan sus características o propiedades, y métodos que emulan su comportamiento o actividad. Con POO tenemos que aprender a pensar las cosas de una manera distinta, para escribir nuestros programas en términos de objetos.</p>
                 <br>
                 <p class="indent mg-b"><span class="inside-idt">POO</span> se fue convirtiendo en el estilo de programación dominante a mediados de los años ochenta. Su dominación fue consolidada gracias al auge de las Interfaces gráficas de usuario, para las cuales la programación orientada a objetos está particularmente bien adaptada. Actualmente, sigue siendo el paradigma más utilizado, y aprender POO para un programador se ha vuelto casi inherente.</p>
+                <br>
             </div>
 
             <div class="wrapper thing">
@@ -85,66 +89,68 @@
 
                 <p class="indent"><span class="inside-idt"></span>No te preocupes, a partir de este punto empieza tu aventura a traves del mundo de la programacion orientada a objetos, donde podras aprender los fundamentos y características únicas que trae consigo este paradigma, pasando de lo más básico hasta lo más avanzado.</p>
                 <br>
-                <p class="indent"><span class="inside-idt"></span>Para los ejemplos que acompañan a la información consiguiente se utilizará una metodología práctica, donde se empleará un <a href="" class="link-deco">juego popular</a>  para la creación de ejemplos, objetos y características del parádigma con codigo en javascript.</p>
+                <p class="indent"><span class="inside-idt"></span>Para los ejemplos que acompañan a la información consiguiente se utilizará una metodología práctica, donde se empleará un <a href="https://www.minecraft.net/es-es/" class="link-deco">juego popular</a>  para la creación de ejemplos, objetos y características del parádigma con codigo en javascript.</p>
                 <br>
-                <p class="indent mg-b"><span class="inside-idt"></span>Pasemos página y veamos más a fondo de que trata POO.<a href="./components/content/objects.html" class="next inside-idt">Empezar con POO >></a>
-                </p>
-
-
+                <p class="indent mg-b"><span class="inside-idt"></span>Pasemos página y veamos más a fondo de que trata POO.<a href="./components/content/objects.html" class="next inside-idt">Empezar con POO >></a></p>
+                <br>
             </div>
         </main>
     
         <!-- Left Navegation Index Contend -->
-        <aside class="nav-index thing">
+        <aside class=" wrapper nav-index thing">
             <h3>Indice de Contenidos</h3>
             <hr class="subline">
             <ul>
                 <li class="index-title">
                     <a href="#intro">
-                        <strong>Introducción al tema</strong>
+                        <strong>Introducción al Tema</strong>
                     </a>
                 </li>
-                <li class="index-sub"><a href="#">Qué es la Orientación a Objetos</a></li>
-                <li class="index-sub"><a href="#">POO vs otros paradigmas</a></li>
+                <li class="index-sub"><a href="./components/content/objects.html">Qué es la Orientación a Objetos</a></li>
+                <li class="index-sub" ><span class="inside-idt"></span>
+                    <a href="./components/content/objects.html">¿Cómo Pensar en Objetos?</a></li>
+                <li class="index-sub"><span class="inside-idt"></span>
+                    <a href="./components/content/objects.html">Definiendo un Objeto</a></li>
+                <li class="index-sub"><span class="inside-idt"></span>
+                    <a href="./components/content/objects.html">POO vs Otros Paradigmas</a></li>
+
+                <li class="index-title">
+                    <a href="./components/content/advantage.html">
+                        <strong>Ventajas de POO</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><span class="inside-idt"></span>
+                    <a href="./components/content/advantage.html">Modificabilidad</a></li>
+                <li class="index-sub"><span class="inside-idt"></span>
+                    <a href="./components/content/advantage.html">Gestión de los Errores</a></li>
+                <li class="index-sub"><span class="inside-idt"></span>
+                    <a href="./components/content/advantage.html">Trabajo en Equipo</a></li>
+                <li class="index-sub"><span class="inside-idt"></span>
+                    <a href="./components/content/advantage.html">Herencia</a></li>
+                <li class="index-sub"><span class="inside-idt"></span>
+                    <a href="./components/content/advantage.html">Reducción de Costos</a></li>
+
+                <li class="index-title">
+                    <a href="./components/content/elements.html">
+                        <strong>Elementos de POO</strong>
+                    </a>
+                </li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/elements.html">Clase</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/elements.html">Objeto</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/elements.html">Atributos</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/elements.html">Método</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/elements.html">Evento</a></li>
         
                 <li class="index-title">
-                    <a href="#">
-                        <strong>Características de POO</strong>
+                    <a href="./components/content/fundamentals.html">
+                        <strong>Fundamentos de POO</strong>
                     </a>
                 </li>
-                <li class="index-sub"><a href="#">Encapsulamiento</a></li>
-                <li class="index-sub"><a href="#">Abstracción</a></li>
-                <li class="index-sub"><a href="#">Herencia</a></li>
-                <li class="index-sub"><a href="#">Polimorfismo</a></li>
-        
-                <li class="index-title">
-                    <a href="#">
-                        <strong>Metodología de desarrollo</strong>
-                    </a>
-                </li>
-                <li class="index-sub"><a href="#">Ciclo de vida</a></li>
-                <li class="index-sub"><a href="#">Lenguaje de modelado UML</a></li>
-                
-                <li class="index-title">
-                    <a href="#">
-                        <strong>Análisis Orientado a Objetos</strong>
-                    </a>
-                </li>
-                <li class="index-sub"><a href="#">Identificación de objetos y clases</a></li>
-                <li class="index-sub"><a href="#">Identificación de relaciones entre clases</a></li>
-                <li class="index-sub"><a href="#">Diagrama de clases de análisis</a></li>
-        
-                <li class="index-title">
-                    <a href="#">
-                        <strong>Diseño Orientado a Objetos</strong>
-                    </a>
-                </li>
-                <li class="index-sub"><a href="#">Atributos</a></li>
-                <li class="index-sub"><a href="#">Métodos</a></li>
-                <li class="index-sub"><a href="#">Relaciones entre clases</a></li>
-                <li class="index-sub"><a href="#">Clases abstractas</a></li>
-                <li class="index-sub"><a href="#">Diagrama de clases de diseño</a></li>
-                <li class="index-sub mg-b"><a href="#">Diagrama de paquetes</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/fundamentals.html">Encapsulamiento</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/fundamentals.html">Abstracción</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/fundamentals.html">Herencia</a></li>
+                <li class="index-sub"><span class="inside-idt"></span><a href="./components/content/fundamentals.html">Polimorfismo</a></li>
+                <br>
             </ul>
         </aside>
 
@@ -202,8 +208,8 @@
     <div id="foot">
         <footer class="page-foot">
             <div class="container">
-                <a href=""><img src="./icons/facebook-24.png" alt="facebook"></a>
-                <a href=""><img src="./icons/instagram-24.png" alt="instagram"></a>
+                <a href=""><img class="img-b" src="./icons/facebook.png" width="32px" alt="facebook"></a>
+                <a href=""><img class="img-b" src="./icons/instagram.png" width="32px" alt="instagram"></a>
                 <p id="foo" class="border-bottom">Copyright © All rights reserved to I.U.J.O</p>
             </div>
         </footer>

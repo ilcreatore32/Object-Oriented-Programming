@@ -1,0 +1,47 @@
+/* Glosary styles */
+.card {
+    background: rgb(247, 247, 247);
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
+}
+
+.card:hover {
+    background: rgb(255, 255, 255);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, #00ff99d5 0px 0px 0px 1px; 
+}
+
+#term-cards{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.card-title{
+    margin: 4rem !important;
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+#term-cards h3{
+    font-size: 18px;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+#term-cards div {
+    text-justify: auto;
+}
+
+.container p{
+    padding: 10px;
+    margin: 10px;
+}
+
+  
