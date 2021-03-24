@@ -1,26 +1,13 @@
 
-Esqueleto sobre el cual se construirán todos los proyectos relacionados con la materia de Interfaces Web con el Usuario.
+Hola soy Weishler Berman y este es mi proyecto de POO, un portal web sencillo para los estudiantes del Instituto Universitario Jesus Obrero.
 
-## Instrucciones
+## Experiencia Durante la realización
 
-- La rama master servirá únicamente como punto de inicio para comenzar a construir los proyectos.
-- Cada proyecto tendrá una rama correspondiente con el nombre alucivo al autor del proyecto, dicha rama será creada en el momento de inicio del proyecto por el autor del mismo.
-- El nombre de la rama debe contar con el siguiente formato: Perez_Fulanito, donde Perez es el primer apellido y Fulanito es el primer nombre, nótese que ambos identificadores comienzan con letras mayúsculas y están separados por un guión bajo. 
-- Usted debe encargarse de la administración del proyecto.
-- El no cumplir las reglas respecto a la creación de ramas decantará en penalización, Las ramas que no cumplan con el formato requerido serán desestimadas, si algún desarrollador llegase a destruir el trabajo de otro compañero, el primero será penalizado con una calificación de cero (0) puntos en su proyecto y el segundo recibirá la oportunidad de reenviar la actividad, debe existir sólo una rama por estudiante, la creación de ramas innecesarias tendrá una penalización de 30% del total de la nota de la evaluación.
-- Para cada proyecto usted debe encargarse de editar el archivo README.md para mostrar la información pertinente.
-- No está permitida la creación de nuevas ramas en el repositorio de gitlab, estas serán ignoradas al momento de la evaluación y por ende su nota desestimada.
-- Usted es libre de crear las ramas que considere necesarias en su repositorio local siempre y cuando sean hijas de la rama específica del proyecto.
-- Al culminar la fecha de entrega del proyecto la rama correspondiente será bloqueda para que no pueda realizar ningún push, se le recomienda tomar sus previsiones.
-- Los commits hechos a los proyectos tienen que ser commits descriptivos de manera tal que cuenten la historia del proyecto de forma provechosa. Puede documentarse al respecto leyendo el siguiente material:
-  - [Writing good commit messages a practical guide](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
-  - [Which commit message convetion do you use at work](https://hashnode.com/post/which-commit-message-convention-do-you-use-at-work-ck3e4jbdd00zyo4s1h7mc7e0g)
-  - [How to Write Useful Commit Messages (My Commit Message Template)](https://dev.to/jacobherrington/how-to-write-useful-commit-messages-my-commit-message-template-20n9)
+- En principio, cuando me puse a trabajar en este proyecto, no tenia nada claro (tal como dijo mi profesor de interfaces web), no sabia que forma tomaria el proyecto, ni aspecto, ni muchas otras cosas más. A medida que pensaba en un plan o pasos para comenzar el proyecto, se iba formando cierta clase de estructura, sin embargo no era nada concreto. Finalmente, tras investigar en el analisis y diseño UML, y realizar el diagrama de clases (el cual fue mi primer paso), ya pude darme una idea mas extensa de lo que se necesitaba hacer, asi
+como lo minimo que necesitaba tener mi portal, para pasar de lo micro a lo macro. Fue entonces cuando pense en
+darle la forma de un blog, senti que este tipo de paginas iba acorde con lo que se pedia como requisito minimo, de este modo seguia el principio Kiss, simple y estupido, pues resulto, al ser un sitio basico me permitio desconectarme de crear un layout muy dificil o grandes detalles al principio del desarrollo, sino que mi atencion se centro en mis componentes y los requisitos minimos para la estrega, de esta forma me aseguraba desde el principio del desarrollo los requisitos, contenido y demas cosas simples de la pagina. Por supuesto, despues de tener todo el contenido listo, necesitaba colocarlo y estilizar el portal a mi gusto personal, y de alli en mas se fue el resto de mi desarrollo, agregando css.
 
-## Recomendaciones
+Debo decir que por "simple" que fue este proyecto, me gusto mucho mi experiencia durante el desarrollo, tambien considero que el contenido expuesto tiene bastante mi mismo y de la manera en que veo las cosas,
+y ademas que esto iba ligado al tema de la POO, el cual queria aprender desde hace un tiempo, y este proyecto
+me afinco en el estudio y analisis del tema, considero que ahora se mas que antes y ya con eso para mi es ganancia...
 
-- Utilizar la funcionalidad de boards de Gitlab para la gestión de las actividades de su proyecto.
-- Es aconsejado el uso de gitflow para la creación de features dentro de su proyecto.
-- Utilizar el foro correspondiente a cada proyecto en la plataforma del Aula virtual para que de esta manera pueda plantear dudas y/o sugerencias.
-- Estar atento a cualquier actualización que se pueda estar realizando a este instructivo.
-- No dude en preguntar ante cualquier duda que pueda presentar.
