@@ -11,36 +11,19 @@
     box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, #00ff99d5 0px 0px 0px 1px; 
 }
 
-.card-img{
-    width: 90%;
-    margin: 10px auto;
-}
-
-#term-cards2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    padding: 10px;
-}
 
 #term-cards{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
-  text-align: center;
-  padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    padding: 10px;
 }
 
 .term-img{
     text-align: center;
     width: 64px;
     height: 64px;
-}
-
-.term-img-mine{
-  text-align: center;
-  width: 102px;
-  height: 64px;
 }
 
 .card-title{
@@ -114,7 +97,7 @@ a.next:hover{
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -55px;
+    margin-left: -60px;
     opacity: 0;
     transition: .3s;
     transform: translate3d(0px, 20px, 0px);
@@ -136,4 +119,14 @@ a.next:hover{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
-  
+
+  .size-img{
+      width: 180px;
+      margin-bottom: 10px;
+  }
+
+  .size-img:hover{
+    box-shadow: #00ff99d5 0px 0px 16px;
+    border-radius: 6rem;
+  }
+ 

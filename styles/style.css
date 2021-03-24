@@ -117,6 +117,7 @@ p{
     box-shadow: rgba(0, 0, 0, 0.26) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
 }
 
+
 .center{
     text-align: center;
 }
@@ -320,4 +321,15 @@ a.next{
 a.next:hover{
     color: #00ff99d5;
     text-decoration: underline;
+}
+
+/* image sizing*/
+.size-img{
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.size-img:hover{
+  box-shadow: #00ff99d5 0px 0px 16px;
+  border-radius: 6rem;
 }

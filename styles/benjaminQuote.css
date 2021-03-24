@@ -1,0 +1,35 @@
+blockquote {
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 500px;
+	line-height: 1.4;
+	position: relative;
+	margin: auto;
+	padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #00ff99d5;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -2rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -2rem;
+	bottom: 1rem;
+}
+
+cite {
+	line-height: 3;
+	text-align: left;
+}
